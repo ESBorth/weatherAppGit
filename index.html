@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borth Weather App</title>
+    <!--Weather Icon Animated-->
+    <link href = "animation.css" rel = "stylesheet">
+    <!--My Style Sheet-->
+    <link href = "styles.css" rel = "stylesheet">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto+Serif:ital,wdth,wght@0,100,100;0,100,200;0,100,300;0,100,400;0,100,500;0,100,600;0,100,700;0,100,800;0,100,900;1,52,367;1,62.7,367;1,100,100&display=swap" rel="stylesheet">
+    <!--Api Retrieval-->
+    <script src = "https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class = "appContainer">
+    <div class = "menuBar">
+        <div class = "temperatureConversion">
+            <button id = "fahrenheitConversionID" class = "fahrenheitConversion2" type = "submit" title = "Convert to fahrenheit">°F</button>
+            <span class = "conversionDivider">|</span>
+            <button id = "celsiusConversionID" class = "celsiusConversion" type = "submit" title = "Convert to celsius">°C</button>
+        </div>
+        <form id = "locationBar-form" class = "locationBar">
+            <input id = "location-input" class = "searchBar" placeholder = "Enter your city">
+            <button id = "searchEntry" class = "searchSubmit" title = "Enter">
+                ⏎
+            </button>
+            <button id = "geoID" class = "geoButton" title = "Use my location">
+                ⌖
+            </button>
+        </form>
+    </div>
+    <div id = "weatherTodayID" class = "weatherToday">
+        <div id = "leftHandID" class = "leftHand">
+            <div class = "icon rainy" id = "rainyID">
+                <div class = "cloud"></div>
+                <div class = "rain"></div>
+            </div>
+            <div class = "icon sunshine" id = "sunnyID">
+                <div class = "sun"></div>
+                <div class = "rays"></div>
+            </div>
+            <div class = "icon snowy" id = "snowyID">
+                <div class = "flake"></div>
+                <div class = "cloud"></div>
+            </div>
+            <div class = "icon stormy" id = "stormyID">
+                <div class = "bolt"></div>
+                <div class = "cloud"></div>
+            </div>
+            <div class = "icon cloudy" id = "cloudyID">
+                <div class = "cloud"></div>
+            </div>
+        </div>
+        <div id = "rightHandID" class = "rightHand">
+            <h1 id = "locationID" class = "location">Welcome</h1>
+            <h2 id = "dateTimeID" class = "dateTime">date</h2>
+            <h2 id = "currentTime" class = "clock">Time</h2>
+            <div id = "tempID" class = "todayTemp">--</div>
+            <span class = "degreesBig">°</span>
+            <div id = "weatherTypeID" class = "weatherDescription">--</div>
+            <div id = "todayStatsID" class = "todayStats">
+                <span id = "highText" class = "statsText">↑</span>
+                <div id = "hiToday" class = "highToday">High</div>
+                <span class = "degrees">°</span>
+                <span class = "highLowDivider">|</span>
+                <span id = "lowText" class = "statsText">↓</span>
+                <div id = "loToday" class = "lowToday">Low</div>
+                <span class = "degrees">°</span><br>
+                <span id = "humidityText" class = "statsText">⎓</span>
+                <div id = "humidityID" class = "humidity">Humidity</div>
+                <span class = "highLowDivider">|</span>
+                <span id = "windText" class = "statsText">♒︎</span>
+                <div id = "windyID" class = "windy">Wind Speed</div>
+            </div>
+        </div>
+    </div>
+    <div class = "weather-forecast" id = "forecastID">Next 6 day Forecast</div>
+</div><br>
+<div class = "footer">Coded by<a href = "https://emmasborth.wixsite.com/emmaborthdesigns" title = "View Portfolio">
+    Emma Borth</a><span class = "spacer">|</span>Powered by <a href="https://www.netlify.com">Netlify</a><span class="spacer">|</span>Open Source on <a href = "https://github.com/ESBorth/weatherAppGit/tree/main" title = "See files">GitHub</a>
+</div><br>
+<script src = "indexJS.js"></script>
+</body>
+</html>

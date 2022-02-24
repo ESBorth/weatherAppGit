@@ -1,0 +1,243 @@
+body{
+    background-color: white;
+}
+.appContainer{
+    margin-top: 10%;
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.4);
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.menuBar{
+    background-color: teal;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.temperatureConversion{
+    display: inline-block;
+    padding-right: 10px;
+}
+.fahrenheitConversion{
+    background-color: transparent;
+    border: transparent solid;
+    color:  white;
+    font-size: 14px;
+}
+.fahrenheitConversion2{
+    background-color: transparent;
+    border: transparent solid;
+    color: #0cf;
+    font-size: 14px;
+}
+.fahrenheitConversion:hover{
+    color: #0cf;
+}
+.fahrenheitConversion2:hover{
+    color: white;
+}
+.conversionDivider{
+    color:white;
+    font-size: 14px;
+}
+.celsiusConversion{
+    background-color: transparent;
+    border: transparent solid;
+    color:white;
+    font-size: 14px;
+}
+.celsiusConversion2{
+    background-color: transparent;
+    border: transparent solid;
+    color: #0cf;
+    font-size: 14px;
+}
+.celsiusConversion:hover{
+    color: #0cf;
+}
+.celsiusConversion2:hover{
+    color: white;
+}
+.locationBar{
+    display: inline-block;
+}
+.searchBar{
+    background-color: white;
+    opacity: 50%;
+    border-radius: 20px;
+    border: transparent solid;
+    display: inline-block;
+}
+::placeholder{
+    color: #205072;
+    opacity: 80%;
+}
+.searchSubmit{
+    background-color: teal;
+    color: white;
+    border: transparent solid;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 14px;
+}
+.searchSubmit:hover{
+    background-color: white;
+    color: teal;
+}
+.geoButton{
+    background-color: teal;
+    color: white;
+    border: transparent solid;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.geoButton:hover{
+    background-color: white;
+    color: teal;
+}
+.leftHand{
+    margin: 0 auto;
+    grid-column: 1;
+}
+.weatherToday{
+    display: grid;
+    background-color: white;
+    border-radius: 20px;
+}
+#sunnyID{
+    display: none;
+}
+#rainyID{
+    display: inline-block;
+}
+#snowyID{
+    display: none;
+}
+#stormyID{
+    display: none;
+}
+#cloudyID{
+    display: none;
+}
+.rightHand{
+    grid-column: 2;
+}
+.location{
+    color: #205072;
+    font-family: 'Georgia';
+    font-weight: 800;
+    margin-bottom: 0px;
+    text-align: right;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.dateTime{
+    margin-top: 5px; 
+    margin-bottom: 0px;
+    color: #0cf;
+    font-family: 'Quicksand';
+    font-weight: 300;
+    text-align: right;
+    font-size: 21px;
+    margin-right: 15px;
+}
+.clock{
+    margin-right: 15px;
+    text-align: right;
+    font-size: 21px;
+    margin-top: 0px;
+    color: #205072;
+    font-family: 'Quicksand';
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+.todayTemp{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Quicksand';
+    display: inline-block;
+    margin-left: 43%;
+}
+.degreesBig{
+    font-size: 36px;
+    font-family: 0;
+}
+.weatherDescription{
+    text-align: center;
+    margin-bottom: 15px;
+    opacity: 50%;
+}
+.todayStats{
+    text-align: center;
+    font-family: 'Georgia';
+    color: #205072;
+}
+.highToday, .lowToday, .humidity, .windy{
+    display: inline-block;
+    color: teal;
+}
+.weather-forecast{
+    background-color: teal;
+    border-radius: 25px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    color: white;
+}
+.col-2{
+    display: inline-block;
+    padding: 8px;
+    color: white;
+}
+.col-2:hover{
+    background-color:#205072;
+    border-radius: 20px;
+}
+.row{
+    display: inline-block;
+    color: white;
+}
+.weekDay{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.weatherForecastMax{
+    font-weight: bold;
+    font-family: 'Quicksand';
+    font-size: 14px;
+    padding-right: 5px;
+}
+.weatherForecastMin{
+    font-family: 'Quicksand';
+    font-weight: 300;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.footer{
+    padding-top: 20px;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    margin: 0 auto;
+    opacity: 50%;
+}
+.spacer{
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+a{
+    color: teal;
+    text-decoration: none;
+}
+a:hover{
+    color: blueviolet;
+}
